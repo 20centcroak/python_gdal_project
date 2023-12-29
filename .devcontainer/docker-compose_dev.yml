@@ -1,0 +1,17 @@
+version: '3'
+
+services: 
+  sig:
+    build: 
+      context: ..
+      dockerfile: .devcontainer/dockerfile_sig
+    command: sleep infinity
+    volumes: 
+      - ..:/workspaces
+    # app:
+    #   build: 
+    #     context: ..
+    #     dockerfile: .devcontainer/dockerfile_dev
+    #   command: sleep infinity
+    #   volumes: 
+    #     - ..:/workspaces
